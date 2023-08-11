@@ -30,11 +30,11 @@ def date():
 def wishing():
     hour=datetime.datetime.now().hour
     if hour>=1 and hour<12:
-        speak('Good Morning Yash')
+        speak('Good Morning Anusha')
     elif hour>=12 and hour<18:
-        speak('Good Afternoon Yash')
+        speak('Good Afternoon Anusha')
     elif hour>=18 and hour<24:
-        speak('Good Evening Yash')
+        speak('Good Evening Anusha')
     else:
         print('Good Evening')
     speak('The Current Time is')
@@ -59,7 +59,7 @@ def takecommand():
     return query
 def screenshot():
     img=pyautogui.screenshot()
-    img.save('C:/Users/sai yashasri/Dobby/ss.png')
+    img.save('C:/Users/xyz/Dobby/ss.png')
 def cpu():
     U=str(psutil.cpu_percent())
     speak('cpu is at '+U)
